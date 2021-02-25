@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>ALL FILES</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Size</th>
+    <th>Hash</th>
+    <th>Download</th>
+    <th>Delete</th>
+  </tr>
+  {% for item in items %}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{date}}</td>
+    <td>{{size}}</td>
+    <td>{{hash}}</td>
+    <td>{{download}}</td>
+    <td>{{delete}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
